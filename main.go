@@ -8,11 +8,11 @@ import (
 
 func main() {
 
-	nearestStars := service.AddTestObjects()
+	nearestClusters := service.AddClusters()
 
-	for i := 0; i < len(nearestStars); i++ {
+	for i := 0; i < len(nearestClusters); i++ {
 
-		cartesianStar := service.Convert(nearestStars[i])
+		cartesianStar := service.Convert(nearestClusters[i])
 		fmt.Println("Object: ", cartesianStar)
 		fmt.Println("Object name: ", cartesianStar.Name)
 		fmt.Println("Object x: ", cartesianStar.X)
